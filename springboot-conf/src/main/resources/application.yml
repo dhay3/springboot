@@ -1,0 +1,5 @@
+
+spring:
+  mvc:
+    locale: ak
+debug: true

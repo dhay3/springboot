@@ -1,0 +1,19 @@
+server:
+  port: 8083
+
+spring:
+  profiles:
+    active: prod
+#如果当有application-dev.properties时会影响yml文件
+#顶格---表示yml文档块
+#---
+#server:
+#  port: 8084
+##通过spring.profiles来命名文段块
+#spring:
+#  profiles: dev
+#---
+#server:
+#  port: 8085
+#spring:
+#  profiles: prod

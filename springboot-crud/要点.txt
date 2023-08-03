@@ -1,0 +1,9 @@
+所有的静态资源都放在resources下static(或是public,resources)文件中,访问url路径中不能带static
+
+springboot启动会去寻找存放静态资源文件夹下的index.html作为首页,通过localhost:8080/ 来访问
+
+所有的favicon.ico(浏览器图标)都放在静态文件夹中,注意要清除缓存
+
+所有需要渲染的页面都放在templates文件夹下(需要引入thymeleaf依赖)
+
+springboot 2.2.5 templates下的index也会被自动扫描到(不需要配置对应的url和配置类也能访问的到)

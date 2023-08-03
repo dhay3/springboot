@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="webjars/jquery/3.4.1/jquery.js"></script>
+    <script>
+        function func() {
+            $.get("http://localhost:8080/cors",{msg:"连接...",val:"成功"},function (data) {
+                console.log(data);
+            });
+        }
+    </script>
+</head>
+<body>
+<button onclick="func()">click</button>
+</body>
+</html>

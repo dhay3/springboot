@@ -1,0 +1,15 @@
+#\u6570\u636E\u6E90\u4FE1\u606F
+spring:
+  datasource:
+    username: root
+    password: 12345
+    url: jdbc:mysql://localhost:3306/mybatis_test?useSSL=false&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+#mapper.xml的位置,数组
+  mapper-locations:
+    - classpath:mapper/UserMapper.xml
+#  别名的包
+  type-aliases-package: com.chz.springbootmybatis.dto
+

@@ -1,0 +1,25 @@
+#开发环境
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mybatis_test?useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 12345
+server:
+  servlet:
+    context-path: /chz #指定项目路径
+student:
+  name: 张三
+  age: 23
+  gender: true
+  date: 1992/02/14 #Date类型参数用/分隔
+  list: [a,b,c] #行内写法 #  list:
+    #    - a
+    #    - b
+  #    - c
+  map: {k1: v1,k2: v2} #行内写法 #  map:
+    #    k1: v1
+    #    k2: v2
+  dog: {name: 小黑} #行内写法
+#  dog:
+#      name: 小黑

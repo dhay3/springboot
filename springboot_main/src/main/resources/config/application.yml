@@ -1,0 +1,22 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mybatis_test?useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 12345
+  profiles:
+    active: dev
+#spring.profiles.active指定环境
+#也可以在edit configurations中的program arguments中输入--spring.profiles.active=dev来指定
+#或在edit configurations中的VM option中输入-Dspring.profiles.active=dev来指定
+---
+server:
+  port: 8083
+spring:
+  profiles: dev
+---
+server:
+  port: 8084
+spring:
+  profiles: prod
